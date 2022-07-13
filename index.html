@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GyanHub</title>
+    <link rel="stylesheet" href="/css/shared.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="/css/media.css">
+</head>
+
+<body>
+    <main>
+        <!-- ====== Navbar Starts ====== -->
+        <header class="main-header">
+            <div class="logo">
+                <a href="/">
+                    <h3 class="logo-text"><span class="first-letter">G</span>yan<span class="first-letter">H</span>ub
+                    </h3>
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <div class="nav-items">
+                    <ul>
+                        <li class="menu-items"><a href="#">Home</a></li>
+                        <li class="menu-items"><a href="#courses">Courses</a></li>
+                        <li class="menu-items"><a href="#about">About</a></li>
+                        <li class="menu-items"><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="menu-items search-bar">
+                        <input type="text" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass icon"></i>
+                    </div>
+                    <div class="menu-items cart">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="mobile-view">
+                <div class="menu-items">
+                    <input type="text" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass icon"></i>
+                </div>
+                <div class="menu-bar" id="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+        </header>
+        <!-- ====== Navbar Ends ====== -->
+        <!-- ====== Hero Section Starts ====== -->
+        <section class="hero-section">
+            <div class="hero-form-control">
+                <h4>Start Learning Today</h4>
+                <div class="login-form">
+                    <h4 class="form-title">Login</h4>
+                    <form action="">
+                        <input type="email" placeholder="Email" name="email" class="form" id="email" required>
+                        <input type="password" name="password" id="password" class="form" placeholder="Password" required>
+                        <button type="submit" class="btn">Login</button>
+                    </form>
+                    <p class="signup-text">Don't have account? <a href="#" class="create-account form-switch">Create an
+                            account</a></p>
+                </div>
+                <div class="signup-form">
+                    <h4 class="form-title">Sign Up</h4>
+
+                    <form action="">
+                        <input type="email" placeholder="Email" name="email" class="form" id="createEmail" required>
+                        <input type="password" name="password" id="createPassword" class="form" placeholder="Password" required>
+                        <input type="password" name="confirmPassword" id="confirmPassword" class="form"
+                            placeholder="Confirm Password" required>
+                        <button type="submit" class="btn" id="signup-btn">Sign Up</button>
+                    </form>
+                    <p class="signup-text">Have an account? <a href="#" class="login-account form-switch">Login</a></p>
+                </div>
+            </div>
+            <div class="hero-info">
+                <h1>Boost your knowledge with GyanHub</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam veniam error excepturi officiis
+                    illum nulla.</p>
+                <a href="#" class="btn">Explore <i class="fa-solid fa-arrow-right btn-arrow"></i></a>
+            </div>
+        </section>
+        <!-- ====== Hero Section Ends ====== -->
+        <!-- ====== Courses Section Starts ====== -->
+        <section class="courses-section section" id="courses">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="What we offer">Courses</h3>
+                </div>
+                <div class="section-body">
+                    <div class="filter">
+                        <button class="filter-btn active" data-filter="*">All</button>
+                        <button class="filter-btn" data-filter=".web">Web Dev</button>
+                        <button class="filter-btn" data-filter=".uiux">UI/UX</button>
+                        <button class="filter-btn" data-filter=".app">Mobile Apps</button>
+                        <button class="filter-btn" data-filter=".graphics">Graphics Design</button>
+                    </div>
+                    <div class="grid">
+                        <div class="grid-item web">
+                            <div class="card-img">
+                                <img src="/images/web-dev.jpeg" alt="web development">
+                            </div>
+                            <div class="card-content">
+                                <h5 class="card-title">Web development bootcamp. Learn HTML, CSS and JS</h5>
+                                <a href="#" class="btn buy-btn"><i class="fa-solid fa-cart-shopping"></i> Buy</a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item app">
+                            <div class="card-img">
+                                <img src="/images/app-dev.jpeg" alt="app development">
+                            </div>
+
+                            <div class="card-content">
+                                <h5 class="card-title">App development bootcamp. Learn Flutter</h5>
+                                <a href="#" class="btn buy-btn"><i class="fa-solid fa-cart-shopping"></i> Buy</a>
+                            </div>
+                        </div>
+                        <div class="grid-item graphics">
+                            <div class="card-img">
+                                <img src="/images/graphics.jpeg" alt="graphics design">
+                            </div>
+
+                            <div class="card-content">
+                                <h5 class="card-title">Graphics Design</h5>
+                                <a href="#" class="btn buy-btn"><i class="fa-solid fa-cart-shopping"></i> Buy</a>
+                            </div>
+                        </div>
+                        <div class="grid-item uiux web">
+                            <div class="card-img">
+                                <img src="/images/ui-ux.jpeg" alt="web development">
+                            </div>
+
+                            <div class="card-content">
+                                <h5 class="card-title">UI/UX</h5>
+                                <a href="#" class="btn buy-btn"><i class="fa-solid fa-cart-shopping"></i> Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- ====== Courses Section Ends ====== -->
+        <!-- ====== About Section Starts ====== -->
+        <section class="about section" id="about">
+            <div class="section-header">
+                <h3 class="title" data-title="Know More">About</h3>
+            </div>
+            <div class="section-body">
+                <div class="about-info">
+                    <h4 class="about-info-heading">We are the best online education provider.</h4>
+                    <p class="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde autem sit
+                        molestias
+                        culpa magni quia molestiae rerum voluptatem sapiente! Vero fugit cum fugiat itaque voluptatibus?
+                    </p>
+                    <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit molestias
+                        nisi
+                        itaque veniam inventore fugiat.</p>
+                </div>
+                <div class="about-img">
+                    <img src="/images/about-img.jpg" alt="about image">
+                </div>
+            </div>
+        </section>
+        <!-- ====== About Section Ends ====== -->
+        <!-- ====== Contact Section Starts ====== -->
+        <section class="contact section" id="contact">
+            <div class="section-header">
+                <h3 class="title" data-title="get in touch">Contact Us</h3>
+            </div>
+            <div class="section-body">
+                <div class="contact-form">
+                    <h4 class="form-title">Get Started!</h4>
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" name="name" id="contactName" placeholder="Enter your name" required>
+                        <input type="email" name="email" id="contactEmail" placeholder="Email" required>
+                        <textarea name="message" id="contactMessage" style="resize: none; height: 5.5rem;" cols="6" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+                <div class="address">
+                    <h4 class="form-title">Reach to us!</h4>
+                    <div class="address-info">
+                        <div> <i class="fa-solid fa-envelope"></i>
+                            <p class="email">harikarmkar2014@gmail.com</p>
+                        </div>
+                        <div><i class="fa-solid fa-location-dot"></i>
+                            <p class="address-info">Purnea, Bihar 854315</p>
+                        </div>
+                        <div><i class="fa-solid fa-phone"></i>
+                            <p class="mobile">+91 7979927414</p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/iharikarmkar" target="_blank"><i
+                                class="fa-brands fa-facebook icon"></i></a>
+                        <a href="https://www.instagram.com/iharikarmkar" target="_blank"><i
+                                class="fa-brands fa-instagram icon"></i></a>
+                        <a href="https://www.twitter.com/iharikarmkar" target="_blank"><i
+                                class="fa-brands fa-twitter icon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ====== Contact Section Ends ====== -->
+    </main>
+    <footer>
+        <p>Designed By: Hari Karmkar</p>
+        <p> &#169 All Rights Reserved | GyanHub.edu.in</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/scripts/isotope.pkgd.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/scripts/app.js"></script>
+</body>
+
+</html>

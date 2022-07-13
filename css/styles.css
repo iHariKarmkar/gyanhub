@@ -1,0 +1,290 @@
+/* =============================================
+               Hero Section Starts
+==============================================*/
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.5)),
+    url(/images/hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-info {
+  max-width: 40%;
+}
+
+.hero-form-control,
+.contact-form {
+  color: var(--text-color-50);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.555);
+  width: 25rem;
+}
+
+.hero-form-control h4 {
+  font-size: 1.25rem;
+}
+.login-form {
+  display: block;
+}
+
+.signup-form {
+  display: none;
+}
+
+.form-title {
+  color: var(--skin-color);
+  margin-top: 0.5rem;
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.form-title::after {
+  position: absolute;
+  content: "";
+  width: 5%;
+  height: 4px;
+  background-color: var(--skin-color-light);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+
+.hero-form-control input,
+.contact-form input,textarea {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  margin: 1rem 0;
+  border: 1px solid var(--skin-color);
+  border-radius: 8px;
+  padding: 5px 12px;
+  background-color: var(--skin-color-50);
+}
+
+.hero-form-control input:focus, .contact-form input:focus {
+  background-color: var(--skin-color-100);
+}
+
+.form-switch {
+  color: var(--text-color-300);
+  transition: 0.3s;
+}
+
+.form-switch:hover {
+  color: var(--skin-color);
+}
+
+.signup-text {
+  margin-top: 10px;
+}
+
+.hero-info {
+  text-align: center;
+}
+
+.hero-info h1 {
+  color: var(--text-color-50);
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.hero-info p {
+  color: var(--text-color-50);
+  margin-bottom: 20px;
+}
+
+/* =============================================
+               Courses Section Starts
+==============================================*/
+.courses-section {
+  width: 100%;
+  background-color: var(--bg-color-light);
+}
+
+.section-body {
+  text-align: center;
+}
+
+.filter {
+  width: 100%;
+}
+
+.filter-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+  transition: 0.3s;
+}
+
+.filter-btn.active {
+  background-color: var(--skin-color);
+  color: var(--text-color-50);
+}
+
+.grid {
+  margin: 0 0.8rem;
+}
+
+.grid-item {
+  width: 33.33%;
+  padding: 1rem;
+  height: 500px;
+}
+.card-img {
+  height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.card-img img {
+  height: 100%;
+}
+
+.card-content {
+  margin-top: 1rem;
+}
+
+.card-content h5 {
+  color: var(--text-color-500);
+}
+
+.buy-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  transition: 0.3s;
+}
+
+.buy-btn:hover i {
+  transform: translateX(-4px);
+}
+/* =============================================
+               About Section Starts
+==============================================*/
+
+.about {
+  background-color: var(--bg-color-light-grey);
+}
+
+.about .section-body,
+.contact .section-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
+.about-info {
+  width: 50%;
+}
+
+.about-info-heading {
+  font-size: 2rem;
+  color: var(--text-color-500);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  color: var(--text-color-300);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.about-img {
+  max-width: 400px;
+}
+
+.about-img img {
+  width: 100%;
+}
+/* =============================================
+               Contact Section Starts
+==============================================*/
+
+.contact {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/images/contact-us.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact .title {
+  color: var(--text-color-50);
+}
+
+.contact .title::before,
+.contact .title::after {
+  color: var(--skin-color-light);
+}
+
+.contact .section-body {
+  justify-content: space-evenly;
+}
+
+.contact .contact-form {
+  width: 40%;
+}
+
+.contact .contact-form input {
+  display: block;
+  width: 100%;
+}
+
+.address {
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    color: var(--text-color-50);
+}
+
+.address-info {
+        text-align: left;
+}
+
+.address-info div {
+    margin: 15px;
+}
+
+
+.address p {
+    display: inline; 
+    font-size: .85rem;   
+}
+
+.socials .icon {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--text-color-100);
+    background-color: var(--bg-color-dark)
+}
+
+footer p {
+    font-size: .85rem;
+}
+
+

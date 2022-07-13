@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-dark: #e6e6e6;
+  --bg-color-light-grey: #fff0f0;
+  --bg-color-light: #f9eafd;
+
+  --text-color-50: #ececec;
+  --text-color-100: #a8a5a5;
+  --text-color-300: #888888;
+  --text-color-500: #464646;
+  --skin-color: #7d009c;
+  --skin-color-light: #bb84c9;
+  --skin-color-50: #f7e6fc;
+  --skin-color-100: #f3d8fc;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =============================================
+               Navbar Starts
+==============================================*/
+
+.main-header {
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 10;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    color: var(--text-color-50);
+    letter-spacing: 5px;
+    padding: 2px 8px;
+    position: relative;
+}
+
+.logo-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 5px solid var(--skin-color-light);
+    border-left: 5px solid var(--skin-color-light);
+    border-radius: 5px;
+}
+
+.logo-text::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-right: 5px solid var(--skin-color-light);
+    border-bottom: 5px solid var(--skin-color-light);
+    border-radius: 5px;
+}
+
+.first-letter {
+    font-family: 'The Nautigal', cursive;
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--skin-color);
+}
+
+.mobile-view {
+    display: none;
+}
+
+.nav-menu ul {
+  display: flex;
+}
+.nav-menu {
+  display: flex;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.menu-items a {
+    position: relative;
+    margin: 0 1rem;
+    color: var(--text-color-50);
+}
+
+.menu-items a:hover {
+    color: var(--skin-color);
+}
+.menu-items a::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    top: 100%;
+    border-radius: 10px;
+    height: 2px;
+    background-color: var(--bg-color-dark);
+    transition: .5s;   
+}
+
+.menu-items a:hover::before {
+    width: 100%;
+    background-color: var(--skin-color);
+}
+
+.menu-items input {
+    width: 10rem;
+    height: 1.75rem;
+    border: 1px solid var(--skin-color);
+    border-radius: 5px;
+    background-color: var(--skin-color-50);
+    padding: 2px 8px;
+}
+
+.menu-items input:focus {
+    background-color: var(--skin-color-100);
+    border-color: var(--skin-color-50);
+}
+
+.icon {
+    font-size: 1rem;
+    margin-left: 5px;
+    cursor: pointer;
+    color: var(--text-color-50);
+}
+
+.icon:hover {
+    color: var(--skin-color);
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    margin-left: 2rem;
+}
+
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: var(--skin-color);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color-50);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--skin-color-100);
+    color: var(--text-color-500);
+}
+
+.btn-arrow {
+    transition:all .3s;
+}
+.btn:hover .btn-arrow {
+    transform: translateX(4px);
+}
+
+.section {
+    padding-top: 5rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 2rem;
+    color: var(--text-color-500);
+}
+
+.title::before {
+    position: absolute;
+    content: attr(data-title);
+    /* display: block; */
+    font-size: .75rem;
+    text-transform: uppercase;
+    color: var(--skin-color);
+    letter-spacing: 3px;
+    opacity: 0.8;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    border-radius: 8px;
+    background-color: var(--skin-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-bar {
+display: none;
+color: var(--text-color-50);
+font-size: 2rem;
+}
