@@ -34,6 +34,11 @@ $(".grid").isotope({
 
 const menuBtn = document.getElementById("menu-btn");
 const navBar = document.querySelector(".nav-items");
+const navItems = document.querySelectorAll('.menu-items');
+
+navItems.forEach(navItem => navItem.addEventListener('click', () => {
+  navBar.classList.remove('active');
+}))
 
 menuBtn.addEventListener("click", () => {
   navBar.classList.toggle("active");
