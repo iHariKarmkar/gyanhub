@@ -1,3 +1,5 @@
+// Filter grid items in course section
+
 const filterButtonsElement = document.querySelectorAll(".filter-btn");
 
 filterButtonsElement.forEach((btn) =>
@@ -9,6 +11,15 @@ filterButtonsElement.forEach((btn) =>
     $(".grid").isotope({ filter: filterValue });
   })
 );
+
+$(".grid").isotope({
+  // options
+  itemSelector: ".grid-item",
+  layoutMode: "fitRows",
+  transitionDuration: ".6s",
+});
+
+// Toggle between login and signup form
 
 const loginButtonSwitchElement = document.querySelector(".login-account");
 const signupButtonSwitchElement = document.querySelector(".create-account");
@@ -25,12 +36,7 @@ loginButtonSwitchElement.addEventListener("click", () => {
   loginForm.style.display = "block";
 });
 
-$(".grid").isotope({
-  // options
-  itemSelector: ".grid-item",
-  layoutMode: "fitRows",
-  transitionDuration: ".6s",
-});
+// Nav items toggle by hamburger icon
 
 const menuBtn = document.getElementById("menu-btn");
 const navBar = document.querySelector(".nav-items");
@@ -43,6 +49,8 @@ navItems.forEach(navItem => navItem.addEventListener('click', () => {
 menuBtn.addEventListener("click", () => {
   navBar.classList.toggle("active");
 });
+
+// Send email functionality
 
 function sendEmail() {
   Email.send({
