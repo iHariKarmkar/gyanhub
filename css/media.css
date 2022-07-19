@@ -77,6 +77,7 @@
   .hero-form-control {
     min-width: 40%;
     width: 80%;
+    margin-top: 30px;
   }
   .hero-info {
     max-width: 100%;
