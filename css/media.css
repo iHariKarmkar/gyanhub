@@ -59,6 +59,11 @@
   .menu-bar {
     display: block;
   }
+  
+  .hero-section,
+  .section {
+    height: auto;
+  }
 
   .hero-section,
   .about .section-body,
@@ -85,14 +90,19 @@
   .about-info {
     width: 100%;
   }
+  
+  .contact {
+    
+  }
 
   .contact .contact-form {
     min-width: 100%;
     margin-bottom: 10px;
   }
 
-  .address {
+  .contact .address {
     min-width: 100%;
+    margin-bottom: 30px;
   }
 }
 

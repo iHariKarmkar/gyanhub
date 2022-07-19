@@ -3,6 +3,7 @@
 ==============================================*/
 .hero-section {
   position: relative;
+  top: 4rem;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgba(0, 0, 0, 0.5)),
     url(/images/hero-image.jpg);
